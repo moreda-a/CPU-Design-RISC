@@ -1,0 +1,8 @@
+set_global_assignment -name IP_TOOL_NAME "LPM_COUNTER"
+set_global_assignment -name IP_TOOL_VERSION "15.1"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "reg16_ST.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "reg16_ST.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "reg16_ST_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "reg16_ST.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "reg16_ST.cmp"]

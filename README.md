@@ -1,4 +1,4 @@
-# CPU-design-RISC
+# CPU-Design-RISC
 Computer Architecture Project
 
 open Quartus II 9.0sp2 Web Edition in cyclone V.

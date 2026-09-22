@@ -4,7 +4,7 @@ This is a simple RISC processor designed from scratch in Verilog and VHDL with I
 
 ## Architecture
 
-![RTL view](CPU%20Project/rtl1.jpg)
+![RTL view](rtl1.jpg)
 
 The processor is built from these parts:
 
@@ -17,24 +17,36 @@ The processor is built from these parts:
 - **Control unit (`ControlLogicGates`):** generates the datapath control signals from the instruction.
 - **Datapath and top level:** `DataPath.bdf` connects the parts, and `cpu.bdf` is the top-level design.
 
-![Datapath](CPU%20Project/circuits.jpg)
+![Datapath](circuits.jpg)
 
 ## Instruction format
 
-![Instruction format](CPU%20Project/inst0.jpg)
-![Instruction format](CPU%20Project/inst1.jpg)
+![Instruction format, part 1](inst0.jpg)
+
+![Instruction format, part 2](inst1.jpg)
 
 ## Simulation
 
-`Waveform.vwf` contains the waveform tests used to check that instructions run correctly.
+`CPU Project/Waveform.vwf` contains the waveform tests used to check that instructions run correctly.
 
-![RTL view](CPU%20Project/rtl2.jpg)
+![RTL view, detail](rtl2.jpg)
+
+## Project structure
+
+```
+CPU Project/    Quartus project: Verilog/VHDL sources, block diagrams, waveform file
+circuits.jpg    datapath diagram
+inst0.jpg       instruction format
+inst1.jpg       instruction format
+rtl1.jpg        RTL view
+rtl2.jpg        RTL view (detail)
+```
 
 ## Running
 
 1. Open `CPU Project/cpu.qpf` in Quartus II 9.0 SP2 Web Edition.
 2. Compile the project. The target device is set in the project settings.
-3. Open `Waveform.vwf` and run the simulation.
+3. Open `CPU Project/Waveform.vwf` and run the simulation.
 
 ## Tech
 
